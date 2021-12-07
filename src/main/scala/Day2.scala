@@ -26,8 +26,8 @@ object Day2 extends App{
         case "forward" =>
           pos += x.split(" ")(1).toInt;
           depth += x.split(" ")(1).toInt * aim
-        case "down" => aim += 1
-        case "up" => aim -= 1
+        case "down" => aim += x.split(" ")(1).toInt
+        case "up" => aim -= x.split(" ")(1).toInt
       }
     }
     depth * pos
